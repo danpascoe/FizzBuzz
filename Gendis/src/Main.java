@@ -5,24 +5,29 @@ public class Main {
 		main.FizzBuzz();
 	}
 	
+	// Function that will take a number and return a string
 	public String intToString(int number) {
 		return String.valueOf(number);
 	}
 	
+	//Run FizzBuzz Game From 1 - 50
 	public void FizzBuzz() {
 		for(int i = 1; i < 50; i++) {
 			String number = checkFizzBuzz(i);
 			System.out.println(number);
 		}
 	}
-		
+	
+	// Check if Fizz/Buzz/FizzBuzz - Parameters can be changed here
 	public String checkFizzBuzz(int number) {
 		
 		String output = "";
 		
+		// Check Parameters
 		int param_1 = 3;
 		int param_2 = 5;
 		
+		// Output Parameters
 		String output_1 = "Fizz";
 		String output_2 = "Buzz";
 		
